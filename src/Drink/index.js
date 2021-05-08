@@ -18,7 +18,7 @@ export const Drink = (props) => {
     <button class="order-btn">Objednat</button>
   </div>`;
 
-  // zachytit element, kam vložím komponentu Layer
+  // zachytit element, pro vložení komponenty Layer
   const productInfo = productElm.querySelector('.drink__info');
 
   for (let i = 0; i < props.layers.length; i++) {
@@ -29,7 +29,7 @@ export const Drink = (props) => {
   const orderButton = productElm.querySelector('.order-btn');
   const drinkCup = productElm.querySelector('.drink__cup');
 
-  // na kliknutí vybrat kafe nebo zrušit objednávku
+  // na klik vybrat kávu nebo zrušit objednávku
   orderButton.addEventListener('click', () => {
     if (props.ordered) {
       orderButton.innerHTML = 'Objednat';

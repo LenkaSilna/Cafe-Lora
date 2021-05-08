@@ -11,9 +11,7 @@ html {
 
 body {
   margin: 0;
-
   background-image: url('./img/spots.png');
-
   color: white;
 }
 
@@ -31,7 +29,6 @@ section {
 h1,
 h2 {
   margin-bottom: 1rem;
-
   font-family: 'Great Vibes', fantasy;
   font-weight: 400;
   font-size: 3rem;
@@ -48,7 +45,6 @@ h3 {
 header {
   padding: 1rem 0 1rem 0;
   height: 5rem;
-
   background-color: #301a1a;
 }
 
@@ -60,7 +56,6 @@ header {
 .site-logo {
   width: 180px;
   height: 50px;
-
   background-image: url('./img/site-logo.png');
   background-size: contain;
 }
@@ -74,18 +69,14 @@ header {
 nav {
   width: 10rem;
   padding: 1rem;
-
   background-color: #301a1a;
 }
 
 nav a {
   display: block;
-
   margin: 1rem;
-
   color: #ddd;
   border-bottom: 1px solid transparent;
-
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -103,11 +94,9 @@ nav a:hover {
   height: 3rem;
   padding: 0;
   border: none;
-
   background-color: transparent;
   background-image: url('./img/menu.png');
   background-size: contain;
-
   cursor: pointer;
 }
 
@@ -117,7 +106,6 @@ nav a:hover {
 
 .banner {
   padding-top: 0;
-
   background-image: url('./img/beans.jpg');
   background-size: cover;
   background-position: top center;
@@ -126,7 +114,6 @@ nav a:hover {
 .intro {
   padding-top: 30rem;
   padding-bottom: 3rem;
-
   text-align: center;
 }
 
@@ -140,115 +127,29 @@ nav a:hover {
   text-align: center;
 }
 
-.drinks-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-
-  margin-bottom: 4rem;
-}
-
-.drink {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 0.5rem;
-  width: 100%;
-}
-
-.drink__product {
-  display: flex;
-}
-
-.drink__cup {
-  width: 9rem;
-  height: 9rem;
-}
-
-.drink__cup img {
-  width: 9rem;
-  height: 9rem;
-}
-
-.drink__cup--selected {
-  background-image: url('./img/cup-selected.png');
-  background-size: contain;
-}
-
-.drink__cup--selected img {
-  visibility: hidden;
-}
-
-.drink__info {
-  margin-left: 1rem;
-}
-
-.drink__controls {
-  margin-top: 1rem;
-
-  text-align: center;
-}
-
-.order-btn {
-  padding: 0.5rem 1rem;
-
-  color: white;
-  background-color: #ea946f;
-  border: none;
-  box-shadow: 0 0 5px #444;
-  border-radius: 1rem;
-
-  transition: 300ms;
-  cursor: pointer;
-}
-
-.order-btn:hover {
-  transform: scale(1.1);
-}
-
-.order-btn:focus {
-  outline: none;
-}
-
-.order-btn:active {
-  background-color: #e67e51;
-}
-
-.layer {
-  display: flex;
-  padding: 0.25rem;
-}
-
-.layer__color {
-  flex: 0 0 1rem;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.5rem;
-  border-radius: 0.5rem;
-
-  background-color: brown;
-  box-shadow: 0 0 5px #333;
-}
-
-.layer__label {
-  line-height: 1rem;
-}
-
 .gallery {
   padding-top: 0;
-  min-height: 100vh;
-
+  height: 100vh;
   color: white;
-  background-image: url('./img/gallery.jpg');
+  background-image: url(https://cafe-lora-reseni.netlify.app/img/gallery-0c32e3.jpg);
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__container {
+  text-align: center;
+  height: 100%;
+  padding: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  backdrop-filter: blur(6px);
 }
 
 .contacts {
   margin-bottom: 4rem;
-
   text-align: center;
 }
 
@@ -261,12 +162,6 @@ nav a:hover {
   height: auto;
 }
 
-@media (min-width: 576px) {
-  .drink {
-    width: 50%;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 960px;
@@ -274,7 +169,6 @@ nav a:hover {
 
   .banner {
     height: 600px;
-
     background-position: top left;
   }
 
@@ -284,11 +178,11 @@ nav a:hover {
 
   nav {
     width: initial;
+    padding: 0;
   }
 
   nav a {
     display: inline-block;
-
     margin-top: 0rem;
     margin-bottom: 0rem;
   }
@@ -299,14 +193,17 @@ nav a:hover {
 
   .intro {
     width: 30%;
-
     margin-left: 65%;
     padding-top: 4rem;
-
     text-align: center;
   }
+}
 
-  .drink {
-    width: 33.333%;
+@media screen and (min-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+  nav {
+    padding: 1rem;
   }
 }

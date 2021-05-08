@@ -6,17 +6,17 @@
     <title>Café Lóra</title>
   </head>
   <body>
-    <section class="banner">
+    <section class="banner" id="home">
       <header>
         <div class="topbar container">
           <div class="site-logo"></div>
           <div class="navigation">
             <button id="nav-btn" class="nav-btn"></button>
             <nav class="nav-closed">
-              <a href="#">domů</a>
-              <a href="#">menu</a>
-              <a href="#">galerie</a>
-              <a href="#">kontakt</a>
+              <a href="#home" class="nav-item">domů</a>
+              <a href="#menu" class="nav-item">menu</a>
+              <a href="#gallery" class="nav-item">galerie</a>
+              <a href="#contact-us" class="nav-item">kontakt</a>
             </nav>
           </div>
         </div>
@@ -24,61 +24,34 @@
       <div class="container">
         <div class="intro">
           <h1>Přijď to ochutnat!</h1>
-          <p>Nabízíme kvalitní kávu, útulné prostředí a perfektní servis.</p>
+          <p>
+            Nabízíme kvalitní kávu, útulné prostředí a&nbsp;perfektní servis.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="menu">
+    <section class="menu" id="menu">
       <div class="container">
         <h2>Naše nabídka</h2>
         <p class="menu-intro">
           Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
         </p>
 
-        <div class="drinks-list">
-          <div class="drink">
-            <div class="drink__product">
-              <div class="drink__cup">
-                <img src="/assets/cups/cappuccino.png" />
-              </div>
-              <div class="drink__info">
-                <h3>Cappuccino</h3>
-                <div class="layer">
-                  <div
-                    class="layer__color"
-                    style="background-color: #feeeca"
-                  ></div>
-                  <div class="layer__label">mléčná pěna</div>
-                </div>
-                <div class="layer">
-                  <div
-                    class="layer__color"
-                    style="background-color: #fed7b0"
-                  ></div>
-                  <div class="layer__label">teplé mléko</div>
-                </div>
-
-                <div class="layer">
-                  <div
-                    class="layer__color"
-                    style="background-color: #613916"
-                  ></div>
-                  <div class="layer__label">espresso</div>
-                </div>
-              </div>
-            </div>
-            <div class="drink__controls">
-              <button class="order-btn">Objednat</button>
-            </div>
-          </div>
-        </div>
+        <div class="drinks-list"></div>
       </div>
     </section>
 
-    <section class="gallery"></section>
+    <section class="gallery" id="gallery">
+      <div class="gallery__container">
+        <p class="gallery__text">
+          Máte chuť na trochu nostalgie? Rádi vás u nás uvítáme, otevíráme
+          1.9.2025!
+        </p>
+      </div>
+    </section>
 
-    <section>
+    <section id="contact-us">
       <div class="container">
         <h2>Kde nás najdete</h2>
         <div class="contacts">
